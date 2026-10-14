@@ -1,0 +1,21 @@
+{
+  "name": "vivek-shivaswamy-portfolio",
+  "version": "1.0.0",
+  "description": "Executive portfolio of Vivek Shivaswamy — Co-Founder & Head of Product, Angel Investor, Startup Mentor.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8089",
+    "start": "npx serve .",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "vivek-shivaswamy",
+    "head-of-product",
+    "ability-stack",
+    "angel-investor",
+    "iim-bangalore"
+  ],
+  "author": "Vivek Shivaswamy",
+  "license": "MIT"
+}
