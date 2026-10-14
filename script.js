@@ -277,4 +277,55 @@ document.addEventListener('DOMContentLoaded', () => {
       window.print();
     });
   });
+
+  // 10. Tactile Glass Folder Vault Interaction
+  const gfRoots = document.querySelectorAll('.gf-root');
+  gfRoots.forEach(root => {
+    // 3D Pointer Tilt
+    root.addEventListener('pointermove', (e) => {
+      const rect = root.getBoundingClientRect();
+      const px = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+      const py = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+      root.style.setProperty('--gf-px', Math.max(-1, Math.min(1, px)).toFixed(3));
+      root.style.setProperty('--gf-py', Math.max(-1, Math.min(1, py)).toFixed(3));
+    });
+
+    root.addEventListener('pointerleave', () => {
+      root.style.setProperty('--gf-px', '0');
+      root.style.setProperty('--gf-py', '0');
+    });
+
+    // Toggle Open State via Front Glass Hit Area
+    const hitBtn = root.querySelector('.gf-hit');
+    if (hitBtn) {
+      hitBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (root.hasAttribute('data-open')) {
+          root.removeAttribute('data-open');
+        } else {
+          root.setAttribute('data-open', '');
+        }
+      });
+    }
+
+    // Interactive Sheets
+    const sheets = root.querySelectorAll('.gf-sheet');
+    sheets.forEach(sheet => {
+      sheet.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const docName = sheet.querySelector('.gf-sheet-name')?.textContent || 'Document';
+        showToast(`📄 Inspected: ${docName}`);
+      });
+    });
+
+    // Tactile Key Actions
+    const keyBtn = root.querySelector('.gf-key');
+    if (keyBtn) {
+      keyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const title = root.querySelector('.gf-title')?.textContent || 'Folder';
+        showToast(`⚡ Tactile Vault: Action on ${title}`);
+      });
+    }
+  });
 });

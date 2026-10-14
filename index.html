@@ -57,6 +57,9 @@
   </script>
 </head>
 <body>
+  <!-- Dotted Desk Matrix & Ambient Glow Background -->
+  <div class="desk-ambient-glow" aria-hidden="true"></div>
+  <div class="desk-grid-matrix" aria-hidden="true"></div>
 
   <!-- ========================================================================
        Top Announcement Bar
@@ -100,6 +103,7 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#vault" class="nav-link">Tactile Vault</a></li>
           <li><a href="#experience" class="nav-link">Ventures & Impact</a></li>
           <li><a href="#skills" class="nav-link">Expertise</a></li>
           <li><a href="#investing" class="nav-link">Angel Portfolio</a></li>
@@ -520,6 +524,222 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Glass Folder Vault Showcase
+       ======================================================================== -->
+  <section class="vault-section" id="vault">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive Document Vault</div>
+        <h2 class="section-title">Tactile Glass Folder Archives</h2>
+        <p class="section-desc">
+          Interact with physical frosted glass artifacts holding key venture architectures, Demlea's exit archives, and angel syndicate holdings.
+        </p>
+      </div>
+
+      <div class="vault-grid">
+        <!-- Folder 1: Ability Stack -->
+        <div class="gf-root" data-tone="dark" data-place="bottom-left" style="width: 340px; height: 312px;">
+          <div class="gf-stage">
+            <div class="gf-tilt">
+              <div class="gf-shadow" aria-hidden="true"></div>
+              <div class="gf-back" style="clip-path: path('M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z');" aria-hidden="true">
+                <img class="gf-art" src="assets/images/ability_stack.jpg" alt="" draggable="false">
+                <div class="gf-back-sheen"></div>
+              </div>
+              <svg class="gf-rim gf-back-rim" viewBox="0 0 340 272" aria-hidden="true">
+                <path d="M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z"></path>
+              </svg>
+
+              <!-- Front Glass -->
+              <div class="gf-front" style="clip-path: path('M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z');">
+                <div class="gf-tint" aria-hidden="true"></div>
+                <div class="gf-spec" aria-hidden="true"></div>
+                <svg class="gf-rim gf-front-rim" viewBox="0 0 340 198" aria-hidden="true">
+                  <path d="M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z" stroke="rgba(255,255,255,0.7)"></path>
+                </svg>
+                <button type="button" class="gf-hit" aria-label="Toggle Ability Stack Folder"></button>
+                <div class="gf-label">
+                  <span class="gf-title">Ability Stack</span>
+                  <span class="gf-meta">3 Core Systems</span>
+                </div>
+              </div>
+
+              <!-- Files -->
+              <div class="gf-files" role="list">
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: -0.8; --gf-depth: 2; z-index: 1;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 86%;"></i><i style="width: 92%;"></i><i style="width: 64%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">AI-Shift-Suite.ts</span>
+                      <span class="gf-sheet-meta">Roster Engine</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: 0; --gf-depth: 1; z-index: 2;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 80%;"></i><i style="width: 90%;"></i><i style="width: 70%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">SoW-Procurement.pdf</span>
+                      <span class="gf-sheet-meta">Milestones</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet gf-sheet--art" style="--gf-slot: 0.8; --gf-depth: 0; z-index: 3;">
+                    <img class="gf-sheet-art" src="assets/images/ability_stack.jpg" alt="">
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">EOR-Architecture.json</span>
+                      <span class="gf-sheet-meta">Global Payroll</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <button type="button" class="gf-key gf-key--more" aria-label="More options">
+                <svg class="gf-glyph gf-glyph--more" viewBox="0 0 30 12"><rect x="1" y="1.5" width="8" height="9" rx="3.4"></rect><rect x="11" y="1.5" width="8" height="9" rx="3.4"></rect><rect x="21" y="1.5" width="8" height="9" rx="3.4"></rect></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Folder 2: Demlea Archives -->
+        <div class="gf-root" data-tone="light" data-place="top-left" style="width: 340px; height: 312px;">
+          <div class="gf-stage">
+            <div class="gf-tilt">
+              <div class="gf-shadow" aria-hidden="true"></div>
+              <div class="gf-back" style="clip-path: path('M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z');" aria-hidden="true">
+                <img class="gf-art" src="assets/images/demlea.jpg" alt="" draggable="false">
+                <div class="gf-back-sheen"></div>
+              </div>
+              <svg class="gf-rim gf-back-rim" viewBox="0 0 340 272" aria-hidden="true">
+                <path d="M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z"></path>
+              </svg>
+
+              <!-- Front Glass -->
+              <div class="gf-front" style="clip-path: path('M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z');">
+                <div class="gf-tint" aria-hidden="true"></div>
+                <div class="gf-spec" aria-hidden="true"></div>
+                <svg class="gf-rim gf-front-rim" viewBox="0 0 340 198" aria-hidden="true">
+                  <path d="M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z" stroke="rgba(255,255,255,0.85)"></path>
+                </svg>
+                <button type="button" class="gf-hit" aria-label="Toggle Demlea Folder"></button>
+                <div class="gf-label">
+                  <span class="gf-title">Demlea Exit</span>
+                  <span class="gf-meta">Acquisition 2022</span>
+                </div>
+              </div>
+
+              <!-- Files -->
+              <div class="gf-files" role="list">
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: -0.7; --gf-depth: 2; z-index: 1;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 85%;"></i><i style="width: 75%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">Curriculum-V2.pdf</span>
+                      <span class="gf-sheet-meta">21st Century</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet gf-sheet--art" style="--gf-slot: 0.1; --gf-depth: 1; z-index: 2;">
+                    <img class="gf-sheet-art" src="assets/images/demlea.jpg" alt="">
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">Creative-Hub.png</span>
+                      <span class="gf-sheet-meta">Workspace</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: 0.8; --gf-depth: 0; z-index: 3;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 90%;"></i><i style="width: 85%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">Exit-TermSheet.doc</span>
+                      <span class="gf-sheet-meta">M&A Executed</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <button type="button" class="gf-key gf-key--more" aria-label="More options">
+                <svg class="gf-glyph gf-glyph--more" viewBox="0 0 30 12"><rect x="1" y="1.5" width="8" height="9" rx="3.4"></rect><rect x="11" y="1.5" width="8" height="9" rx="3.4"></rect><rect x="21" y="1.5" width="8" height="9" rx="3.4"></rect></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Folder 3: Angel Syndicate Portfolio -->
+        <div class="gf-root" data-tone="dark" data-place="top-right" style="width: 340px; height: 312px;">
+          <div class="gf-stage">
+            <div class="gf-tilt">
+              <div class="gf-shadow" aria-hidden="true"></div>
+              <div class="gf-back" style="clip-path: path('M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z');" aria-hidden="true">
+                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #070b08, #173024, #a7843a);"></div>
+                <div class="gf-back-sheen"></div>
+              </div>
+              <svg class="gf-rim gf-back-rim" viewBox="0 0 340 272" aria-hidden="true">
+                <path d="M0 56A22 22 0 0 1 22 34L146 34C170 34 172 0 198 0L318 0A22 22 0 0 1 340 22L340 250A22 22 0 0 1 318 272L22 272A22 22 0 0 1 0 250Z"></path>
+              </svg>
+
+              <!-- Front Glass -->
+              <div class="gf-front" style="clip-path: path('M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z');">
+                <div class="gf-tint" aria-hidden="true"></div>
+                <div class="gf-spec" aria-hidden="true"></div>
+                <svg class="gf-rim gf-front-rim" viewBox="0 0 340 198" aria-hidden="true">
+                  <path d="M0 22A22 22 0 0 1 22 0L118 0C144 0 146 32 172 32L318 32A22 22 0 0 1 340 54L340 176A22 22 0 0 1 318 198L22 198A22 22 0 0 1 0 176Z" stroke="rgba(255,255,255,0.7)"></path>
+                </svg>
+                <button type="button" class="gf-hit" aria-label="Toggle Angel Syndicate Folder"></button>
+                <div class="gf-label">
+                  <span class="gf-title">Angel Portfolio</span>
+                  <span class="gf-meta">20+ Investments</span>
+                </div>
+              </div>
+
+              <!-- Files -->
+              <div class="gf-files" role="list">
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: -0.8; --gf-depth: 2; z-index: 1;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 80%;"></i><i style="width: 90%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">3to1-Capital-LP.deck</span>
+                      <span class="gf-sheet-meta">Syndicate</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: 0; --gf-depth: 1; z-index: 2;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 85%;"></i><i style="width: 70%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">VentureCatalysts.inv</span>
+                      <span class="gf-sheet-meta">Micro-VC</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="gf-sheet-slot">
+                  <button type="button" class="gf-sheet" style="--gf-slot: 0.8; --gf-depth: 0; z-index: 3;">
+                    <span class="gf-lines" aria-hidden="true"><i style="width: 92%;"></i><i style="width: 80%;"></i></span>
+                    <span class="gf-sheet-head">
+                      <span class="gf-sheet-name">Thesis-0to1-Scale.pdf</span>
+                      <span class="gf-sheet-meta">Playbook</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <button type="button" class="gf-key gf-key--add" aria-label="Add Document">
+                <svg class="gf-glyph gf-glyph--plus" viewBox="0 0 24 24"><path d="M12 4.5v15M4.5 12h15"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 3.5rem; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted);">
+        Hover to lean · Click folder to open · + to drop document
+      </p>
     </div>
   </section>
 
